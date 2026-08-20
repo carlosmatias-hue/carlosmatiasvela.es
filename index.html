@@ -159,15 +159,19 @@
     color:var(--ink-soft);font-weight:700;margin:0 0 16px;
   }
   .logo-strip{
-    display:flex;flex-wrap:wrap;align-items:center;gap:30px;
+    display:flex;flex-wrap:wrap;align-items:center;gap:18px 22px;
     margin-bottom:32px;padding-bottom:32px;border-bottom:1px solid var(--line);
   }
   .logo-strip img{
-    height:30px;width:auto;display:block;
-    filter:grayscale(1);opacity:0.7;
-    transition:filter .2s ease, opacity .2s ease;
+    height:46px;width:auto;display:block;
+    transition:transform .15s ease;
   }
-  .logo-strip img:hover{filter:grayscale(0);opacity:1;}
+  .logo-strip img:hover{transform:translateY(-2px);}
+
+  /* Education header (institution logo + title) */
+  .edu-header{display:flex;align-items:center;gap:14px;margin-bottom:2px;}
+  .edu-header img{height:38px;width:auto;flex:0 0 auto;object-fit:contain;}
+  .edu-header .edu-title{margin:0;}
 
   /* Skills */
   .pills{display:flex;flex-wrap:wrap;gap:10px;}
@@ -212,8 +216,10 @@
     nav ul li a{font-size:13px;}
     h1{font-size:28px;}
     .cert-list{grid-template-columns:1fr;}
-    .logo-strip{gap:20px;justify-content:center;}
-    .logo-strip img{height:24px;}
+    .logo-strip{gap:14px 18px;justify-content:center;}
+    .logo-strip img{height:36px;}
+    .edu-header{gap:10px;}
+    .edu-header img{height:30px;}
   }
 </style>
 </head>
@@ -304,21 +310,35 @@
   <div class="wrap">
     <h2>Formación y certificaciones</h2>
 
-    <p class="logo-strip-label">Certificado por</p>
+    <p class="logo-strip-label">Insignias de certificación</p>
     <div class="logo-strip">
-      <img src="assets/logos/scrumalliance.png" alt="Scrum Alliance">
-      <img src="assets/logos/safe.png" alt="SAFe · Scaled Agile, Inc.">
-      <img src="assets/logos/icagile.png" alt="ICAgile">
-      <img src="assets/logos/pmi.png" alt="Project Management Institute">
-      <img src="assets/logos/kanban-university.png" alt="Kanban University">
-      <img src="assets/logos/certiprof.png" alt="CertiProf">
-      <img src="assets/logos/less.png" alt="LeSS.works">
-      <img src="assets/logos/unfix.png" alt="unFIX">
-      <img src="assets/logos/thepower.png" alt="thePower">
+      <img src="assets/badges/icpcat.png" alt="ICAgile Certified Professional — Coaching Agile Transformations" title="ICAgile Certified Professional — Coaching Agile Transformations (2025)">
+      <img src="assets/badges/aiagility.png" alt="AI &amp; Agility: A Comprehensive Introduction — Scrum Alliance" title="AI &amp; Agility: A Comprehensive Introduction — Scrum Alliance (2024)">
+      <img src="assets/badges/okrchampion.png" alt="OKR Champion — CertiProf" title="OKR Champion — Certified Professional (OKRCCP) — CertiProf (2023)">
+      <img src="assets/badges/okrmaster.png" alt="OKR Master — CertiProf" title="OKR Master (OKRMCP) — CertiProf (2023)">
+      <img src="assets/badges/spc.png" alt="Certified SAFe 5 Program Consultant" title="Certified SAFe 5 Program Consultant (2023)">
+      <img src="assets/logos/unfix.png" alt="unFIX" title="Diseño organizativo con unFIX (2022)">
+      <img src="assets/badges/icpeac.png" alt="ICAgile Certified Professional — Enterprise Agile Coaching" title="ICAgile Certified Professional — Enterprise Agile Coaching (2022)">
+      <img src="assets/badges/sdp.png" alt="Certified SAFe 5 DevOps Practitioner" title="Certified SAFe 5 DevOps Practitioner (2021)">
+      <img src="assets/logos/thepower.png" alt="thePower" title="ThePowerMBA — thePower (2021)">
+      <img src="assets/badges/lpm.png" alt="Certified SAFe 5 Lean Portfolio Management" title="Certified SAFe 5 Lean Portfolio Management (2020)">
+      <img src="assets/badges/csppo.png" alt="Certified Scrum Professional — Product Owner" title="Certified Scrum Professional — Product Owner (CSP-PO)">
+      <img src="assets/badges/cspsm.png" alt="Certified Scrum Professional — Scrum Master" title="Certified Scrum Professional — Scrum Master (CSP-SM)">
+      <img src="assets/logos/kanban-university.png" alt="Kanban University" title="KMP — Kanban Management Professional — Kanban University (2019)">
+      <img src="assets/logos/kanban-university.png" alt="Kanban University" title="Team Kanban Practitioner — Kanban University (2018)">
+      <img src="assets/logos/less.png" alt="LeSS.works" title="Certified LeSS Practitioner — LeSS.works (2017)">
+      <img src="assets/logos/scrumalliance.png" alt="Scrum Alliance" title="Certified Scrum Professional (CSP) (2016)">
+      <img src="assets/badges/pmiacp.png" alt="PMI-ACP — Project Management Institute" title="PMI-ACP — Project Management Institute (2016)">
+      <img src="assets/badges/cspo.png" alt="Certified Scrum Product Owner" title="Certified Scrum Product Owner (CSPO) (2016)">
+      <img src="assets/badges/sa.png" alt="Certified SAFe Agilist" title="Certified SAFe Agilist (2016)">
+      <img src="assets/badges/csm.png" alt="Certified Scrum Master" title="Certified Scrum Master (CSM) (2011)">
     </div>
 
     <div class="edu-block">
-      <p class="edu-title">Ingeniería Técnica de Informática de Sistemas</p>
+      <div class="edu-header">
+        <img src="assets/logos/upm.png" alt="Universidad Politécnica de Madrid">
+        <p class="edu-title">Ingeniería Técnica de Informática de Sistemas</p>
+      </div>
       <p class="edu-sub">Universidad Politécnica de Madrid</p>
       <p class="edu-dates">1999 — 2004</p>
     </div>

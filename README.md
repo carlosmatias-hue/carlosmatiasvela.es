@@ -6,7 +6,8 @@ Página personal de una sola pantalla (CV + enlace a LinkedIn) lista para public
 
 - `index.html` — toda la página (HTML + CSS incluido, sin dependencias externas).
 - `assets/carlos-photo.png` — foto de perfil.
-- `assets/logos/` — logotipos de las entidades certificadoras (Scrum Alliance, SAFe, ICAgile, PMI, Kanban University, CertiProf, LeSS.works, unFIX, thePower) que aparecen en la franja "Certificado por" de la sección Formación.
+- `assets/logos/` — logotipos de entidades certificadoras y de la UPM, usados como respaldo cuando una certificación no tiene insignia propia, y junto al título de la carrera.
+- `assets/badges/` — insignias oficiales de cada certificación concreta (SAFe, ICAgile, Scrum Alliance, CertiProf, PMI-ACP, y la insignia personal de "AI & Agility") que aparecen en la franja "Insignias de certificación" de la sección Formación.
 
 ## Cómo publicarla en GitHub Pages
 
@@ -34,4 +35,4 @@ Página personal de una sola pantalla (CV + enlace a LinkedIn) lista para public
 
 - Cambia textos, experiencia o habilidades directamente en `index.html` (todo está comentado por secciones: Sobre mí, Experiencia, Formación, Habilidades, Testimonios, Contacto).
 - Para actualizar la foto, sustituye `assets/carlos-photo.png` por otra imagen con el mismo nombre (idealmente cuadrada, mínimo 300x300px).
-- Para añadir o quitar una certificación, edita la lista dentro de `<ul class="cert-list">`; si es de una entidad nueva, añade su logo en `assets/logos/` y una línea más en el `<div class="logo-strip">`.
+- Para añadir o quitar una certificación, edita la lista dentro de `<ul class="cert-list">` y, si quieres mostrar su insignia, añade la imagen en `assets/badges/` (o reutiliza un logo de `assets/logos/` si no tiene insignia propia) y una línea más en el `<div class="logo-strip">`.
