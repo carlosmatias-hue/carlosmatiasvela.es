@@ -144,7 +144,7 @@
   .edu-title{font-weight:700;font-size:16px;margin:0 0 2px;}
   .edu-sub{font-size:14px;color:var(--ink-soft);margin:0 0 2px;}
   .edu-dates{font-size:13px;color:var(--ink-soft);}
-  .cert-list{list-style:none;margin:12px 0 0;padding:0;}
+  .cert-list{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:28px;}
   .cert-list li{
     padding:10px 0;border-top:1px solid var(--line);
     font-size:14.5px;color:var(--ink-soft);
@@ -152,6 +152,22 @@
   }
   .cert-list li span.cert-name{color:var(--ink);font-weight:600;}
   .cert-more{margin-top:10px;font-size:13.5px;}
+
+  /* Logos strip */
+  .logo-strip-label{
+    font-size:12px;text-transform:uppercase;letter-spacing:.08em;
+    color:var(--ink-soft);font-weight:700;margin:0 0 16px;
+  }
+  .logo-strip{
+    display:flex;flex-wrap:wrap;align-items:center;gap:30px;
+    margin-bottom:32px;padding-bottom:32px;border-bottom:1px solid var(--line);
+  }
+  .logo-strip img{
+    height:30px;width:auto;display:block;
+    filter:grayscale(1);opacity:0.7;
+    transition:filter .2s ease, opacity .2s ease;
+  }
+  .logo-strip img:hover{filter:grayscale(0);opacity:1;}
 
   /* Skills */
   .pills{display:flex;flex-wrap:wrap;gap:10px;}
@@ -195,6 +211,9 @@
     nav ul{gap:14px;}
     nav ul li a{font-size:13px;}
     h1{font-size:28px;}
+    .cert-list{grid-template-columns:1fr;}
+    .logo-strip{gap:20px;justify-content:center;}
+    .logo-strip img{height:24px;}
   }
 </style>
 </head>
@@ -285,6 +304,19 @@
   <div class="wrap">
     <h2>Formación y certificaciones</h2>
 
+    <p class="logo-strip-label">Certificado por</p>
+    <div class="logo-strip">
+      <img src="assets/logos/scrumalliance.png" alt="Scrum Alliance">
+      <img src="assets/logos/safe.png" alt="SAFe · Scaled Agile, Inc.">
+      <img src="assets/logos/icagile.png" alt="ICAgile">
+      <img src="assets/logos/pmi.png" alt="Project Management Institute">
+      <img src="assets/logos/kanban-university.png" alt="Kanban University">
+      <img src="assets/logos/certiprof.png" alt="CertiProf">
+      <img src="assets/logos/less.png" alt="LeSS.works">
+      <img src="assets/logos/unfix.png" alt="unFIX">
+      <img src="assets/logos/thepower.png" alt="thePower">
+    </div>
+
     <div class="edu-block">
       <p class="edu-title">Ingeniería Técnica de Informática de Sistemas</p>
       <p class="edu-sub">Universidad Politécnica de Madrid</p>
@@ -294,10 +326,26 @@
     <ul class="cert-list">
       <li><span class="cert-name">ICAgile Certified Professional — Coaching Agile Transformations</span><span>2025</span></li>
       <li><span class="cert-name">AI &amp; Agility: A Comprehensive Introduction — Scrum Alliance</span><span>2024</span></li>
-      <li><span class="cert-name">OKR Champion — Certified Professional (OKRCCP)</span><span></span></li>
-      <li><span class="cert-name">OKR Master (OKRMCP)</span><span></span></li>
+      <li><span class="cert-name">OKR Champion — Certified Professional (OKRCCP) — CertiProf</span><span>2023</span></li>
+      <li><span class="cert-name">OKR Master (OKRMCP) — CertiProf</span><span>2023</span></li>
+      <li><span class="cert-name">Certified SAFe 5 Program Consultant</span><span>2023</span></li>
+      <li><span class="cert-name">Diseño organizativo con unFIX</span><span>2022</span></li>
+      <li><span class="cert-name">ICAgile Certified Professional — Enterprise Agile Coaching</span><span>2022</span></li>
+      <li><span class="cert-name">Certified SAFe 5 DevOps Practitioner</span><span>2021</span></li>
+      <li><span class="cert-name">ThePowerMBA — thePower</span><span>2021</span></li>
+      <li><span class="cert-name">Certified SAFe 5 Lean Portfolio Management</span><span>2020</span></li>
+      <li><span class="cert-name">Certified Scrum Professional — Product Owner (CSP-PO)</span><span></span></li>
+      <li><span class="cert-name">Certified Scrum Professional — Scrum Master (CSP-SM)</span><span></span></li>
+      <li><span class="cert-name">KMP — Kanban Management Professional — Kanban University</span><span>2019</span></li>
+      <li><span class="cert-name">Team Kanban Practitioner — Kanban University</span><span>2018</span></li>
+      <li><span class="cert-name">Certified LeSS Practitioner — LeSS.works</span><span>2017</span></li>
+      <li><span class="cert-name">Certified Scrum Professional (CSP)</span><span>2016</span></li>
+      <li><span class="cert-name">PMI-ACP — Project Management Institute</span><span>2016</span></li>
+      <li><span class="cert-name">Certified Scrum Product Owner (CSPO)</span><span>2016</span></li>
+      <li><span class="cert-name">Certified SAFe Agilist</span><span>2016</span></li>
+      <li><span class="cert-name">Certified Scrum Master (CSM)</span><span>2011</span></li>
     </ul>
-    <p class="cert-more">+16 certificaciones adicionales en Agile, SAFe y Business Agility — <a href="https://www.linkedin.com/in/carlosmatiasvela/" target="_blank" rel="noopener">ver el listado completo en LinkedIn</a>.</p>
+    <p class="cert-more">Todas las certificaciones emitidas por Scrum Alliance, SAFe (Scaled Agile, Inc.), ICAgile, CertiProf, Kanban University, LeSS.works, unFIX y thePower — <a href="https://www.linkedin.com/in/carlosmatiasvela/" target="_blank" rel="noopener">ver credenciales en LinkedIn</a>.</p>
   </div>
 </section>
 
